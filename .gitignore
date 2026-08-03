@@ -1,0 +1,12 @@
+# --- NEVER COMMIT REAL CAREGIVING DATA TO A PUBLIC REPO ---
+*.jsonl
+day_log*.json
+*.txt
+!demo_output.txt
+transcripts/
+*.mp3
+*.wav
+*.m4a
+__pycache__/
+*.pyc
+.venv/

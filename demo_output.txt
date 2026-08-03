@@ -1,0 +1,80 @@
+{
+  "source": "demo",
+  "extracted_at": "2026-08-02T22:15:59",
+  "units": {
+    "weight": "lb",
+    "io": "mL",
+    "calories": "kcal"
+  },
+  "transcript": "Log for 2025-08-02. She weighed 181 pounds this morning. Intake about a cup and a half of water, output looked low. Roughly 1400 calories today. Woke at 6:30 am, went to bed around 10:45 pm. Slept poorly, up a couple of times.",
+  "fields": {
+    "date": {
+      "value": "2025-08-02",
+      "evidence": "2025-08-02",
+      "flags": []
+    },
+    "weight_lb": {
+      "value": 181.0,
+      "evidence": "181 pounds",
+      "flags": []
+    },
+    "intake": {
+      "value": null,
+      "evidence": "Intake about a cup and a half of water, output",
+      "flags": [
+        "approximate",
+        "needs_review:io_phrase_only"
+      ],
+      "phrase": "Intake about a cup and a half of water, output"
+    },
+    "output": {
+      "value": null,
+      "evidence": "output looked low",
+      "flags": [
+        "approximate",
+        "needs_review:io_phrase_only"
+      ],
+      "phrase": "output looked low"
+    },
+    "calories": {
+      "value": 1400,
+      "evidence": "1400 calories",
+      "flags": []
+    },
+    "rise_time": {
+      "value": "06:30",
+      "evidence": "Woke at 6:30 am",
+      "flags": []
+    },
+    "bedtime": {
+      "value": "22:45",
+      "evidence": "went to bed around 10:45 pm.",
+      "flags": []
+    },
+    "sleep_quality": {
+      "value": "Slept poorly, up a couple of times",
+      "evidence": "Slept poorly, up a couple of times",
+      "flags": []
+    },
+    "sleep_minutes": {
+      "value": 465,
+      "evidence": "22:45->06:30",
+      "flags": [
+        "derived"
+      ]
+    }
+  },
+  "needs_review": {
+    "intake": [
+      "approximate",
+      "needs_review:io_phrase_only"
+    ],
+    "output": [
+      "approximate",
+      "needs_review:io_phrase_only"
+    ]
+  }
+}
+
+# CSV row (date,weight_lb,intake,output,calories,rise_time,bedtime,sleep_minutes,sleep_quality,flags):
+2025-08-02,181.0,,,1400,06:30,22:45,465,"Slept poorly, up a couple of times","intake:approximate,needs_review:io_phrase_only;output:approximate,needs_review:io_phrase_only"
