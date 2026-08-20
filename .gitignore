@@ -1,4 +1,5 @@
 # --- NEVER COMMIT REAL CAREGIVING DATA TO A PUBLIC REPO ---
+# Audio, transcripts, logs, derived records.
 *.jsonl
 day_log*.json
 *.txt
@@ -7,6 +8,21 @@ transcripts/
 *.mp3
 *.wav
 *.m4a
+
+# --- run-root pipeline artifacts (the demo runs in a temp dir; these should
+#     never appear in the repo, but default-deny them anyway) ---
+manifest.jsonl
+store_index.jsonl
+restore_log.jsonl
+objects/
+store/
+*.gpg
+*.age
+*_backup.tar.gz
+restic-repo/
+age_identity.txt
+
+# --- python ---
 __pycache__/
 *.pyc
 .venv/
